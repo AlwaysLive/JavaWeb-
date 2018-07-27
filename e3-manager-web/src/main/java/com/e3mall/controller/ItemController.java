@@ -21,6 +21,7 @@ public class ItemController {
     @ResponseBody
     public TbItem getItemById(@PathVariable Long itemId) {
         TbItem tbItem = itemService.getItemById(itemId);
+        System.out.println("提交成功怎么说");
         return tbItem;
     }
 }
